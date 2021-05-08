@@ -1,6 +1,6 @@
 # Angus WG
 
-* [博客](https://anguswg.github.io/simple_blog)
+* [博客](https://anguswg.github.io/AngusWG/)
 * [简书](https://www.jianshu.com/u/058b9e136f83)
 
 ---
