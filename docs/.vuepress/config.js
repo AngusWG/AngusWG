@@ -78,6 +78,11 @@ module.exports = {
                     iconClass: 'icon-erji',
                     title: '听音乐',
                     link: 'https://music.163.com/#/playlist?id=149086736'
+                },
+                {
+                    iconClass: 'icon-rss',
+                    title: 'RSS',
+                    link: 'https://anguswg.github.io/AngusWG/rss.xml'
                 }
             ]
         },
@@ -174,6 +179,18 @@ module.exports = {
                     return moment(timestamp).format('YYYY-MM-DD H:MM:SS');
                 }
             }
-        ]
+        ],
+        ['feed', {
+            canonical_base: 'https://anguswg.github.io/AngusWG/',
+            feeds: {
+                rss2: {enable: true},
+                atom1: {enable: false},
+                json1: {enable: false},
+            },
+            count: 60,
+            posts_directories: [
+                '/'
+            ]
+        }]
     ]
 }
