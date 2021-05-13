@@ -5,7 +5,7 @@ module.exports = {
     description: 'ZZA的博客',// 描述,以 <meta> 标签渲染到页面html中
     base: '/AngusWG/', // '/<github仓库名>/'， 默认'/'
     head: [
-        ['link', {rel: 'icon', href: '/img/favicon.jpg'}], //favicons，资源放在public文件夹
+        ['link', {rel: 'icon', href: '/img/favicon.ico'}], //favicons，资源放在public文件夹
         ['meta', {
             name: 'keywords',
             content: 'Angus,AngusWG,zza,ZZA'
