@@ -57,7 +57,7 @@ module.exports = {
             href: 'https://github.com/AngusWG' // 可选的
         },
         blogger: { // 博主信息，显示在首页侧边栏
-            avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+            avatar: '/img/blogger_avatar.jpg',
             name: 'AngusWG',
             slogan: '调包侠'
         },
