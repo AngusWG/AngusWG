@@ -9,28 +9,12 @@
 
 ---
 
-## 最近更新的帖子
-
-* [pythoner使用规范](/编程/pythoner使用规范.md)
-* [好物分享](/随笔/好物分享.md)
-* [VR游戏感想](/随笔/VR游戏感想.md)
-* [关于远程工作](/随笔/远程工作分析.md)
-* [韭菜的股市研究](/项目/韭菜的股市研究.md)
-* [复习笔记](/编程/复习笔记.md)
-* [windows上的docker](/编程/windows上的docker.md)
-* [如何愉快的魂穿到公司——内网连接指南](/随笔/如何愉快的魂穿到公司——内网连接指南.md)
-
----
-
-
 ## 相关链接
 
 * [我的Github](https://github.com/AngusWG)
 * [我的原简书博客地址](https://www.jianshu.com/u/058b9e136f83)
 * [本博客的静态链接地址-方便看源码过来的小伙伴](https://anguswg.github.io/AngusWG/)
 
-![](./images/7485616-eefd1a0ed5fef397.png)
+![.](./images/7485616-eefd1a0ed5fef397.png)
 
 ---
-
-
