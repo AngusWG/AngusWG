@@ -1,7 +1,8 @@
 # QQ输入法自定义日期格式
 
 * ``屁大点事发个博文系列。``
-  
+* [参考](https://blog.walterlv.com/post/ime-date-time-format.html)
+
 ---
 
 首先QQ输入法输入 now 会有一个自带的当前时间短语。
