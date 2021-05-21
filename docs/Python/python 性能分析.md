@@ -1,6 +1,6 @@
 ---
 title: python 性能分析
-date: 2021-05-07 19:10:33
+date: 2021-05-21 19:10:33
 permalink: /pages/648d9f/
 categories:
   - Python
@@ -60,7 +60,7 @@ Pycharm 右上角启动按钮旁边有性能分析按钮，
 
 ---  
   
-# snakeviz 生成剖面图  
+## snakeviz 生成剖面图  
 
 运行目录下 命令行输入：`snakeviz prof_run_1_1.pstat`  
 
@@ -70,10 +70,12 @@ Pycharm 右上角启动按钮旁边有性能分析按钮，
   
 ---  
 
-# gprof2dot 时间分析图
+## gprof2dot 时间分析图
 
 `gprof2dot -f pstats mkm_run.prof | dot -Tpng -o mkm_run.png`  
 
 ![image.png](../images/7485616-50571e9d9a8de77b.png)  
+
+---
 
 ![](../images/7485616-633f052b4326b4d8.jpg)
