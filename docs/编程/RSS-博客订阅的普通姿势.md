@@ -1,6 +1,6 @@
 ---
 title: RSS-博客订阅的普通姿势
-date: 2021-05-17 16:33:20
+date: 2021-06-07 02:39:15
 permalink: /pages/9b39de/
 categories:
   - 编程
@@ -25,11 +25,21 @@ eg. <https://anguswg.github.io/AngusWG/rss.xml>
 
 ![Trigger email](../images/2021-05-17-16-23-00.png)
 
----
-
 ## feedly
 
-这里有另一个订阅方式 [feedly](../images/https://feedly.com/)
+这里有另一个订阅方式 [feedly](/https://feedly.com/)
 操作上也是获取RSS，贴上去就好了~
+
+## Outlook RSS(目前使用中)
+
+outlook自带了一个rss订阅方案
+
+![](../images/2021-06-07-14-38-15.png)
+
+* 首先会把所有的文章都下载下来。
+* 我每天都会检查邮件，放在outlook反而更方便。
+* 不足是找不到订阅连接，所以都先放到了[友情链接](../friends.md)里
+
+---
 
 ![](../images/2021-05-17-16-27-00.gif)
