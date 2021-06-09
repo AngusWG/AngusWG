@@ -1,6 +1,6 @@
 ---
 title: pycharm_black_强迫症
-date: 2021-06-07 16:25:15
+date: 2021-06-08 01:41:48
 permalink: /pages/9162d2/
 categories:
   - Python
@@ -67,6 +67,29 @@ isort fastapi tests docs_src scripts --check-only
     -   id: check-json
     -   id: flake8
         exclude: migrations|.*\_local.py|manage.py|settings.py
+```
+
+参考 [fastapi-crudrouter](https://github.com/awtkns/fastapi-crudrouter)
+
+``` yaml
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+    - name: Run Black Code Formatter
+      uses: psf/black@stable
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r tests/dev.requirements.txt
+    - name: Check Typing with mypy
+      run: |
+        mypy fastapi_crudrouter
+    - name: Lint with flake8
+      run: |
+        flake8 fastapi_crudrouter
 ```
 
 ---
