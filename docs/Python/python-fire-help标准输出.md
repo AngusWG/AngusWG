@@ -26,8 +26,10 @@ if __name__ == "__main__":
 
 > 更改PAGER环境变量(推荐)
 
+``` text
 * windows上设置 setx PAGER type
 * linux上设置 export PAGER=cat
+```
 
 > 在程序中修改环境变量
 
