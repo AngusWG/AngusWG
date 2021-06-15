@@ -1,3 +1,12 @@
+---
+title: 搭建xray-shadowsock
+date: 2021-06-11 18:11:21
+permalink: /pages/738615/
+categories:
+  - 编程
+tags:
+  - 
+---
 # 搭建xray-shadowsock
 
 ## 参考
