@@ -36,3 +36,22 @@ if __name__ == "__main__":
 ```python
 os.environ["PAGER"] = 'cat'
 ```
+
+---
+
+* 一个写完后发现没必要的代码
+  
+``` python3
+def _fire_print_prepare() -> None:
+    """help to print mode `setx PAGER cat`"""
+    import os
+    import platform
+    from shutil import which
+
+    if os.environ.get("PAGER"):
+        return
+    if which("cat"):
+        os.environ["PAGER"] = "cat"
+    elif platform.platform().startswith("Windows"):
+        os.environ["PAGER"] = "type"
+```
