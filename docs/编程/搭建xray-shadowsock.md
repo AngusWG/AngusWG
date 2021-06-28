@@ -21,8 +21,9 @@ tags:
 ``` bash
 curl  https://get.acme.sh | sh
 apt install socat
+/root/.acme.sh/acme.sh --register-account -m my@example.com
 /root/.acme.sh/acme.sh --issue -d www.mydomain.com  --standalone
-acme.sh  --upgrade  --auto-upgrade
+/root/.acme.sh/acme.sh  --upgrade  --auto-upgrade
 ```
 
 ## 配置配置文件
