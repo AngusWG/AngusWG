@@ -28,5 +28,10 @@
 * 🏠 [Blog / 博客](https://anguswg.github.io/AngusWG/)
 * 🔭 I'm working in Shenzhen, China.
 * 📫 How to reach me: z740713651@outlook.com
-* 📣 Life is limited, learning is unlimited. Learn and do interesting things, and use Python.
+* 📣 Life is limited and learning is unlimited. To learn and do interesting things, and use Python.
 * 🎵 List of [songs](https://music.163.com/#/playlist?id=149086736) I'm listened to recently.
+* 🚀 I've contributed code to [rqalpha](https://github.com/ricequant/rqalpha) and it's my pleasure.
+* ⚙️ I did a little project, hopes it will be useful to you:
+  * [simple-event-bus](https://github.com/AngusWG/simple-event-bus): a simple event frame for Python.
+  * [cookiecutter](https://github.com/AngusWG/cookiecutter-py-package) to help you create a Python package.
+  * [run-web-pycode](https://github.com/AngusWG/run-web-pycode) to run a Python code script on github.com.
