@@ -2,6 +2,7 @@
 
 * [Ginta](https://www.ginta.top/)
 * [Untitled blog](http://blog.zhipengx.com/) `http://blog.zhipengx.com/feed.xml`
+* [面包大佬](https://nkiiiiid.gitee.io/)
 
 ---
 
