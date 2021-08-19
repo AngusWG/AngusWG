@@ -69,7 +69,7 @@ module.exports = {
     },
     social: {
       // 社交图标，显示于博主信息栏和页脚栏
-      // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+      iconfontCssFile: "//at.alicdn.com/t/font_2731389_qw49agug93b.css", // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
       icons: [
         {
           iconClass: "icon-youjian",
@@ -90,6 +90,11 @@ module.exports = {
           iconClass: "icon-rss",
           title: "RSS",
           link: "https://anguswg.github.io/AngusWG/rss.xml",
+        },
+        {
+          iconClass: "icon-steam",
+          title: "Steam",
+          link: "https://steamcommunity.com/profiles/76561198216863856/",
         },
       ],
     },
