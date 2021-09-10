@@ -74,3 +74,48 @@ docker run -d -p 9000:9000 -p 9000:9000/udp --name ss-libev --restart=always -v 
 ```
 
 * 安卓用户点[这里](https://github.com/teddysun/xray-plugin-android/releases)下载
+
+## 认证超时问题
+
+查看日志`docker logs ss-libev -f --tail 20`
+
+```text
+2021/09/10 10:08:03 http: TLS handshake error from 192.168.1.1:999: remote error: tls: bad certificate
+2021/09/10 10:08:04 http: TLS handshake error from 192.168.1.1:999: remote error: tls: bad certificate
+2021/09/10 10:08:05 http: TLS handshake error from 192.168.1.1:999: remote error: tls: bad certificate
+2021/09/10 10:08:06 http: TLS handshake error from 192.168.1.1:999: remote error: tls: bad certificate
+```
+
+证书过时了
+
+输入命令更新证书:`/root/.acme.sh/acme.sh  --upgrade  --auto-upgrade`
+
+然后报错了:
+
+``` text
+[Fri 10 Sep 2021 10:11:37 AM CST] Renew: 'www.mydomain.com'
+[Fri 10 Sep 2021 10:11:37 AM CST] Using CA: https://acme-v02.api.letsencrypt.org/directory
+[Fri 10 Sep 2021 10:11:37 AM CST] Standalone mode.
+[Fri 10 Sep 2021 10:11:37 AM CST] LISTEN    0         511                0.0.0.0:80               0.0.0.0:*        users:(("nginx",pid=1481169,fd=8),("nginx",pid=898219,fd=8))                   
+LISTEN    0         511                   [::]:80                  [::]:*        users:(("nginx",pid=1481169,fd=9),("nginx",pid=898219,fd=9))                   
+[Fri 10 Sep 2021 10:11:37 AM CST] tcp port 80 is already used by (("nginx",pid=1481169,fd=8),("nginx",pid=898219,fd=8))                   
+80                  [
+[Fri 10 Sep 2021 10:11:37 AM CST] Please stop it first
+[Fri 10 Sep 2021 10:11:37 AM CST] _on_before_issue.
+```
+
+需要先关闭nginx
+
+写了个脚本:
+vim `/root/script/acme_job.sh`
+
+``` bash
+nginx -s stop        
+/root/.acme.sh/acme.sh  --upgrade  --auto-upgrade
+nginx
+```
+
+更改执行时间：  
+`sed -i  '$a15 0 * * * "/usr/bin/bash /root/script/acme_job.sh" > /var/log/acme_job.log' /tmp/a.txt`
+
+ok--
