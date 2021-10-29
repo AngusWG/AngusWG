@@ -25,3 +25,8 @@ tags:
 4. 任务栏设置 > 任务栏项 - 关闭`聊天`， 关闭`搜索`。
 5. 在语言里先增加拼音输入法,然后再删掉拼音输入法,就只有qq输入法了。可能会造成闪屏。
 6. 左下角小组件设置一下。
+
+## win11更新后资源管理器不断重启卡死的解决办法
+
+[不停卡死的偏方1](https://www.bilibili.com/read/cv13461253?from=articleDetail)
+[不停卡死的偏方2](https://www.bilibili.com/read/cv13051781?from=search&spm_id_from=333.337.0.0)
