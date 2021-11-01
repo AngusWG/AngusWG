@@ -28,5 +28,6 @@ tags:
 
 ## win11更新后资源管理器不断重启卡死的解决办法
 
-[不停卡死的偏方1](https://www.bilibili.com/read/cv13461253?from=articleDetail)
-[不停卡死的偏方2](https://www.bilibili.com/read/cv13051781?from=search&spm_id_from=333.337.0.0)
+[参考](https://www.v2ex.com/t/810392)
+
+震惊！竟然是wsl的锅，解决方法:`wsl --shutdown`
