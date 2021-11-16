@@ -191,8 +191,8 @@ module.exports = {
       {
         choosen: "gitalk",
         options: {
-          clientID: "a6e1355287947096b88b",
-          clientSecret: "f0e77d070fabfcd5af95bebb82b2d574d7248d71",
+          clientID: process.env.GITALK_CLIENTID,
+          clientSecret: process.env.GITALK_CLIENTSECRET,
           repo: "AngusWG", // GitHub 仓库
           owner: "AngusWG", // GitHub仓库所有者
           admin: ["AngusWG"], // 对仓库有写权限的人
