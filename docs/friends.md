@@ -1,12 +1,13 @@
 # 友链
 
 * [Ginta](https://www.ginta.top/)
-* [Untitled blog](http://blog.zhipengx.com/) `http://blog.zhipengx.com/feed.xml`
+* [Untitled blog](http://blog.zhipengx.com/)
 * [面包大佬](https://nkiiiiid.github.io/)
 
 ---
 
-* [PegasusWang Python/Golang Web 入坑指南](https://github.com/PegasusWang/python-web-guide)
+* [PegasusWang - Python/Golang Web 入坑指南](https://github.com/PegasusWang/python-web-guide)
+* [马大伟 - 构建我的被动收入 ](https://www.bmpi.dev/)
 
 ---
 
