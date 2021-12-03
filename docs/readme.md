@@ -22,7 +22,19 @@ simplePostListLength: 5
 
 * 发现总会写出点错别字啥的，希望大家见谅，细心的读者一定能找到联系作者的方式
 
----
+## DRAFTING
+
+<div class="block-embed block-embed-service-youtube">
+    <iframe
+        type="text/html"
+        width="100%" height="500px"
+        src="https://witeboard.com/03357bb0-53dc-11ec-b3d9-91afb1d8bb88" 
+        frameborder="0"
+        webkitallowfullscreen=""
+        mozallowfullscreen=""
+        allowfullscreen="allowfullscreen">
+    </iframe>
+</div>
 
 ## 相关链接
 
