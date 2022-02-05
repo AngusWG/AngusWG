@@ -35,6 +35,7 @@
   * [simple-event-bus](https://github.com/AngusWG/simple-event-bus): a simple event frame for Python.
   * [cookiecutter](https://github.com/AngusWG/cookiecutter-py-package) to help you create a Python package.
   * [run-web-pycode](https://github.com/AngusWG/run-web-pycode) to run a Python code script on github.com.
+  * [foam-template-cn](https://github.com/AngusWG/foam-template-cn) is a chinese methodology  to building your digital notes(second brain).
 
 **Skills stack:**
 
