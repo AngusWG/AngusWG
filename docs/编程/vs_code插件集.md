@@ -5,15 +5,15 @@ permalink: /pages/e693d0/
 categories:
   - 编程
 tags:
-  - 
+  -
 ---
 # vs_code插件集
 
-拿到了GitHub Copilot的使用权，真的很香，  
-为此开始尝试使用vscode编程折磨自己。  
-以前总说小体积vscode比不上IDE pycharm，  
-确实没有插件啥也不是，有插件了估计比pycharm还重。  
-vs code选插件真的是很痛苦的事情，弄个表做个备份。  
+拿到了GitHub Copilot的使用权，真的很香，
+为此开始尝试使用vscode编程折磨自己。
+以前总说小体积vscode比不上IDE pycharm，
+确实没有插件啥也不是，有插件了估计比pycharm还重。
+vs code选插件真的是很痛苦的事情，弄个表做个备份。
 
 ![](../images/2021-07-28-10-42-20.png)
 
@@ -56,5 +56,6 @@ vs code选插件真的是很痛苦的事情，弄个表做个备份。
 * vim - vim拓展包
 * git graph - git图表
 * Markdown Mind Map Preview - markdown转思维导图
+* vscode-office - markdown 所见所得
 
 ![](../images/2021-07-28-10-42-41.png)
