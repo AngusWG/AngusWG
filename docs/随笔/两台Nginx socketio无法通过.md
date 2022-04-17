@@ -2,10 +2,11 @@
 title: 两台Nginx socketio无法通过
 date: 2021-04-19 11:04:53
 permalink: /pages/8a860d/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 两台Nginx socketio无法通过  
 

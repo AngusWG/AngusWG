@@ -2,10 +2,11 @@
 title: doctest的setup
 date: 2021-11-22 18:41:13
 permalink: /pages/55846c/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # doctest的setup
 

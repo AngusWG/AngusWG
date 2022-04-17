@@ -2,10 +2,11 @@
 title: outlook+jira+to-do
 date: 2021-04-19 11:04:53
 permalink: /pages/fbc2a1/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # outlook+jira+to-do  
 

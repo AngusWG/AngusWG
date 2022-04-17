@@ -2,10 +2,11 @@
 title: wsl 上装node
 date: 2021-04-19 11:04:53
 permalink: /pages/3330c9/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # wsl 上装node  
 

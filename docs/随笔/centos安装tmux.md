@@ -2,10 +2,11 @@
 title: centos安装tmux
 date: 2021-09-07 11:06:18
 permalink: /pages/d83747/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # centos安装tmux
 

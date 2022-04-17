@@ -2,10 +2,11 @@
 title: pycharm如何同时编辑多行
 date: 2021-04-19 11:04:53
 permalink: /pages/b9c304/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # pycharm如何同时编辑多行  
 

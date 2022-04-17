@@ -2,10 +2,11 @@
 title: 用pycharm装包出现pycharm The repository located at pypi douban com is not a
 date: 2021-04-19 11:04:53
 permalink: /pages/38f52d/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 用pycharm装包出现pycharm The repository located at pypi douban com is not a  
 

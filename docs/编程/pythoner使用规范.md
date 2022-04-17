@@ -2,10 +2,11 @@
 title: pythoner使用规范
 date: 2021-04-19 11:04:53
 permalink: /pages/0278f4/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # pythoner使用规范
 

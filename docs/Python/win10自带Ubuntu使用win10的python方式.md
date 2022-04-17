@@ -2,10 +2,11 @@
 title: win10自带Ubuntu使用win10的python方式
 date: 2021-04-19 11:04:53
 permalink: /pages/360ac3/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # win10自带Ubuntu使用win10的python方式  
 

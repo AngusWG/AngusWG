@@ -2,10 +2,11 @@
 title: win11的打开方式
 date: 2021-10-28 22:36:31
 permalink: /pages/036b87/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # win11的打开方式
 

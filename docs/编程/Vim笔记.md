@@ -2,10 +2,11 @@
 title: Vim笔记
 date: 2021-05-17 11:04:53
 permalink: /pages/f1b45a/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # Vim 笔记
 

@@ -2,10 +2,11 @@
 title: git设置代理
 date: 2021-04-19 11:04:53
 permalink: /pages/cc550e/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # git设置代理  
 

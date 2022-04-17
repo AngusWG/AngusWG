@@ -2,10 +2,11 @@
 title: pip修改为豆瓣源 脚本
 date: 2021-04-19 11:04:53
 permalink: /pages/78fb9f/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # pip修改为豆瓣源 脚本  
 

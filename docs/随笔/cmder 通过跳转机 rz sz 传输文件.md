@@ -2,10 +2,11 @@
 title: cmder 通过跳转机 rz sz 传输文件
 date: 2021-04-19 11:04:53
 permalink: /pages/fbaab4/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # cmder 通过跳转机 rz sz 传输文件  
 

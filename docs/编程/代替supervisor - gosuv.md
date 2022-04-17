@@ -2,10 +2,11 @@
 title: 代替supervisor - gosuv
 date: 2021-04-19 11:04:53
 permalink: /pages/7d083d/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 代替supervisor - gosuv  
 

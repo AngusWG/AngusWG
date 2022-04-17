@@ -2,10 +2,11 @@
 title: conda与rqdatac教程
 date: 2021-04-19 11:04:53
 permalink: /pages/cddca2/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # conda与rqdatac教程  
 

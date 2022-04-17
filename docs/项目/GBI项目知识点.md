@@ -2,10 +2,11 @@
 title: GBI项目知识点
 date: 2021-04-19 11:04:53
 permalink: /pages/7a1000/
-categories:
+categories: 
   - 项目
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # GBI项目知识点  
 

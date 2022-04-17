@@ -2,10 +2,11 @@
 title: exe'
 date: 2021-04-19 11:04:53
 permalink: /pages/028a1b/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # LINK fatal error LNK1158 cannot run 'rc.exe'  
 

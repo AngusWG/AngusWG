@@ -2,10 +2,11 @@
 title: RSS-博客订阅的普通姿势
 date: 2021-06-07 02:39:15
 permalink: /pages/9b39de/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 
 # RSS-博客订阅的普通姿势

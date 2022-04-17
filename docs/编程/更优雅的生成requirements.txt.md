@@ -2,10 +2,11 @@
 title: txt
 date: 2021-04-19 11:04:53
 permalink: /pages/3bc8b4/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 更优雅的生成requirements.txt  
 

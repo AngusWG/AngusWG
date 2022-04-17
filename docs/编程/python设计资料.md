@@ -2,10 +2,11 @@
 title: python设计资料
 date: 2021-04-19 11:04:53
 permalink: /pages/6be88b/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # python设计资料  
 

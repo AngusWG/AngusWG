@@ -2,10 +2,11 @@
 title: 在控制台（console）执行python文件、debug python程序
 date: 2021-04-19 11:04:53
 permalink: /pages/a27727/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 在控制台（console）执行python文件、debug python程序  
 

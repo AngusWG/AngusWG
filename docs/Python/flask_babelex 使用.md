@@ -2,10 +2,11 @@
 title: flask_babelex 使用
 date: 2021-04-19 11:04:53
 permalink: /pages/b6ffd0/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # flask_babelex 使用  
 

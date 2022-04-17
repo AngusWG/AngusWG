@@ -2,10 +2,11 @@
 title: socketio 第三次握手失败问题
 date: 2021-04-19 11:04:53
 permalink: /pages/f65b5d/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # socketio 第三次握手失败问题  
 

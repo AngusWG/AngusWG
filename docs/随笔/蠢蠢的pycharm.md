@@ -2,10 +2,11 @@
 title: 蠢蠢的pycharm
 date: 2021-05-17 16:57:27
 permalink: /pages/a62d94/
-categories:
+categories: 
   - 随笔
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 
 # 蠢蠢的Pycharm

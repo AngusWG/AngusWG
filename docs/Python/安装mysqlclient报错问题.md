@@ -2,10 +2,11 @@
 title: 安装mysqlclient报错问题
 date: 2021-04-19 11:04:53
 permalink: /pages/8c15f9/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 安装mysqlclient报错问题  
 

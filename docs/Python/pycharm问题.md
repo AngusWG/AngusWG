@@ -2,10 +2,11 @@
 title: pycharm问题
 date: 2021-04-19 11:04:53
 permalink: /pages/fe7ce4/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # pycharm问题  
 

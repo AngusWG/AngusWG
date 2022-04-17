@@ -2,10 +2,11 @@
 title: pycharm_black_强迫症
 date: 2021-06-08 01:41:48
 permalink: /pages/9162d2/
-categories:
+categories: 
   - Python
-tags:
+tags: 
   - 屁大点事
+publish: true
 ---
 # pycharm_black_强迫症
 

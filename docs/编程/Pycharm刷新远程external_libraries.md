@@ -2,10 +2,11 @@
 title: Pycharm刷新远程external_libraries
 date: 2021-11-04 23:23:07
 permalink: /pages/fa0561/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # Pycharm刷新远程external_libraries
 

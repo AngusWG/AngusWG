@@ -2,10 +2,11 @@
 title: windows下使用make
 date: 2021-05-17 16:54:10
 permalink: /pages/01db1f/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 
 # windows下使用make

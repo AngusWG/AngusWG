@@ -2,10 +2,11 @@
 title: 解决Flask-SQLAlchemy 2006 MySQL server has gone away 问题
 date: 2021-04-19 11:04:53
 permalink: /pages/f23090/
-categories:
+categories: 
   - Python
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 解决Flask-SQLAlchemy 2006 MySQL server has gone away 问题  
 

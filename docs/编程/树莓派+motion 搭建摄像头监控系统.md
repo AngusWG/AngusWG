@@ -2,10 +2,11 @@
 title: 树莓派+motion 搭建摄像头监控系统
 date: 2021-04-19 11:04:53
 permalink: /pages/8536f5/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # 树莓派+motion 搭建摄像头监控系统  
 

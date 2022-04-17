@@ -2,10 +2,11 @@
 title: windows上的docker
 date: 2021-04-19 11:04:53
 permalink: /pages/6d366b/
-categories:
+categories: 
   - 编程
-tags:
-  - 
+tags: 
+  - null
+publish: true
 ---
 # windows上的docker  
 
