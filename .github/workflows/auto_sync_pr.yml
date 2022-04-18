@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: dev_auto
+      - run: ls
       - name: Reset main branch
         run: |
           git reset --hard dev_auto
