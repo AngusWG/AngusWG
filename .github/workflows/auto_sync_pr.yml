@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: dev_auto
+          ref: main
       - run: ls
       - name: Reset main branch
         run: |
