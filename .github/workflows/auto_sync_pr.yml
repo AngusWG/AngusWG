@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: dev_auto
+        # with:
+        #   ref: dev_auto
       - name: Update AUTHORS
         run: |
           git log
