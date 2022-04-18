@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        # with:
-        #   ref: main
+        with:
+          ref: main
       - run: ls
       - name: Reset main branch
         run: |
-          git reset --hard dev_auto
           git fetch origin dev_auto:dev_auto
+          git reset --hard dev_auto
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         id: cpr
