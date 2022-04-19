@@ -1,15 +1,17 @@
 ---
 title: :python浮点数问题
-date: 2022-04-19 14:28:42
+date: 2022-04-19 14:28:43
 tags:
-  - 
+  - 屁大点事
 categories:
-  -
+  - python
 foam_template:
   filepath: 'note/docs/python浮点数问题.md'
 article: true
 ---
 # python浮点数问题
+
+- [参考(搬运)](https://darkof.me/2014/11/23/python-float/)
 
 ``` python
 In [1]: 0.1 + 0.2 == 0.3
