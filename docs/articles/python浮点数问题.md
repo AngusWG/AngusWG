@@ -1,6 +1,6 @@
 ---
-title: :python浮点数问题
-date: 2022-04-19 14:28:43
+title: python浮点数问题
+date: 2022-04-19 14:28:44
 tags:
   - 屁大点事
 categories:
