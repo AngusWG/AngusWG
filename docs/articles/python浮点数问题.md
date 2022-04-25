@@ -1,10 +1,10 @@
 ---
 title: python浮点数问题
-date: 2022-04-19 14:28:44
+date: 2022-04-19 14:28:45
 tags:
   - 屁大点事
 categories:
-  - python
+  - Python
 foam_template:
   filepath: 'note/docs/python浮点数问题.md'
 article: true
