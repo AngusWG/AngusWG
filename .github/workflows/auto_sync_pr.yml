@@ -21,6 +21,6 @@ jobs:
         with:
           commit-message: publish note to blog
           title: sync note pull request
-          body: $(date +"%Y-%m-%dT%H:%M:%S%z")
+          body: sync note to blog
           branch: dev_auto
           base: master
