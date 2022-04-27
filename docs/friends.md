@@ -16,5 +16,6 @@
 - [张小凯的博客](https://github.com/JasonkayZK) `https://jasonkayzk.github.io/atom.xml`
 - [小明明s à domicile](https://www.dongwm.com/) `https://www.dongwm.com/atom.xml`
 - [Timothy](https://xiaozhou.net/atom.xml)
+- [HelloGitHub](https://hellogithub.com/rss)
 
 ![.](./images/2021-05-13-12-14-07.png)
