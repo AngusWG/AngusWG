@@ -1,6 +1,6 @@
 ---
 title: win11的打开方式
-date: 2021-10-28 22:36:31
+date: 2022-05-06 06:18:55
 permalink: /pages/036b87/
 categories: 
   - 随笔
@@ -29,6 +29,23 @@ article: true
 
 ## win11更新后资源管理器不断重启卡死的解决办法
 
-[参考](https://www.v2ex.com/t/810392)
+关键词: wsl taskbar all icon flash windows 11 任务栏闪烁
 
-震惊！竟然是wsl的锅，解决方法:`wsl --shutdown`
+~~`震惊！竟然是wsl的锅，解决方法:`wsl --shutdown`~~
+
+根据[帖子](https://www.v2ex.com/t/810392)，bug已经在[wslg-issue](https://github.com/microsoft/wslg/issues/348)里提出，并已经修复。目前有个临时解决方案。
+
+修改 `%USERPROFILE%\.wslconfig`
+
+``` config
+[wsl2]
+guiApplications=false
+```
+
+然后重启wsl: `wsl --shutdown`
+
+解决问题
+
+### MicroSoft store 慢
+
+在国内不要开代理，速度就上去了。
