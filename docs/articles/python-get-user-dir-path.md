@@ -1,11 +1,12 @@
 ---
 title: python-get-user-dir-path
-date: 2022-05-06 19:29:58
-tags:
-  - 
-categories:
-  -
+date: 2022-05-06 19:29:57
+tags: 
+  - null
+categories: 
+  - python
 article: true
+permalink: /pages/22f974/
 ---
 # python-get-user-dir-path
 
