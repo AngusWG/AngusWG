@@ -43,7 +43,9 @@ article: true
 guiApplications=false
 ```
 
+
 然后重启 wsl: `wsl --shutdown`
+
 
 解决问题
 
