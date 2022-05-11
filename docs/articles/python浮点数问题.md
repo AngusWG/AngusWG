@@ -1,13 +1,14 @@
 ---
 title: python浮点数问题
-date: 2022-04-19 14:28:45
-tags:
+date: 2022-04-19 14:28:44
+tags: 
   - 屁大点事
-categories:
+categories: 
   - Python
-foam_template:
-  filepath: 'note/docs/python浮点数问题.md'
+foam_template: 
+  filepath: note/docs/python浮点数问题.md
 article: true
+permalink: /pages/bf260f/
 ---
 # python浮点数问题
 

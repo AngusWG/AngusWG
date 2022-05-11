@@ -1,6 +1,6 @@
 ---
 title: pycharm_black_强迫症
-date: 2022-03-02 17:28:34
+date: 2022-03-02 17:28:35
 permalink: /pages/9162d2/
 categories: 
   - Python
@@ -77,13 +77,13 @@ Name: Black
 Description: Black is the uncompromising Python code formatter.
 Program: <install_location_from_step_2>
 # Program: d:/ProgramData/Miniconda3/Scripts/black.exe
-Arguments: "$"
+Arguments: $FilePath$
 
 Name: Isort
 Description: Sort imports in current file
 Program: <install_location_from_step_2>
 # Program: d:/ProgramData/Miniconda3/Scripts/black.exe
-Arguments: -e -m 4 -w 120 "$"
+Arguments: -e -m 4 -w 120 $FilePath$
 ```
 
 #### step4 pycharm配置快捷键
