@@ -1,6 +1,6 @@
 ---
 title: win11 的打开方式
-date: 2022-05-06 06:18:56
+date: 2022-05-06 06:18:57
 permalink: /pages/036b87/
 categories: 
   - 随笔
@@ -43,12 +43,18 @@ article: true
 guiApplications=false
 ```
 
-
 然后重启 wsl: `wsl --shutdown`
-
 
 解决问题
 
 ### MicroSoft store 慢
 
 在国内不要开代理，速度就上去了。
+
+## win11右键默认显示更多选项
+
+- [来源](https://www.zhihu.com/question/480356710/answer/2204452858)
+- [Windows 11 Classic Context Menu v1.1](https://www.sordum.org/14479/windows-11-classic-context-menu-v1-1/)
+
+下载Windows 11 Classic Context Menu后，打开则可以看到三个选项，分别对应“经典右键菜单”、“默认右键菜单”和“重启explorer.exe”。
+可以自由切换经典的菜单样式。
