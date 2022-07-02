@@ -1,10 +1,10 @@
 ---
 title: python-get-user-dir-path
-date: 2022-05-06 19:29:57
+date: 2022-05-06 19:29:58
 tags: 
   - null
 categories: 
-  - python
+  - Python
 article: true
 permalink: /pages/22f974/
 ---

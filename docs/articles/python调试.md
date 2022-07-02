@@ -1,10 +1,10 @@
 ---
 title: python调试
-date: 2022-04-19 14:46:08
+date: 2022-04-19 14:46:09
 tags:
   - 
 categories:
-  -
+  - Python
 foam_template:
   filepath: 'note/docs/python调试.md'
 article: true
