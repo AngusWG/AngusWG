@@ -1,13 +1,14 @@
 ---
 title: python调试
 date: 2022-04-19 14:46:09
-tags:
-  - 
-categories:
+tags: 
+  - null
+categories: 
   - Python
-foam_template:
-  filepath: 'note/docs/python调试.md'
+foam_template: 
+  filepath: note/docs/python调试.md
 article: true
+permalink: /pages/b857d6/
 ---
 # python调试
 

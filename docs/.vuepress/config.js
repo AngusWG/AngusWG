@@ -14,6 +14,21 @@ module.exports = {
       },
     ],
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
+    // google Analyse
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-K6T796E95X',
+      },
+    ],
+    [
+      'script',
+      {},
+      [
+        "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-K6T796E95X');",
+      ],
+    ],
   ],
   markdown: {
     lineNumbers: true, // 代码行号
