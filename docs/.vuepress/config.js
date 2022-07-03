@@ -15,6 +15,7 @@ module.exports = {
     ],
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
     // google Analyse
+    // https://github.com/vuejs/vuepress/issues/2713#issuecomment-806621348
     [
       'script',
       {
