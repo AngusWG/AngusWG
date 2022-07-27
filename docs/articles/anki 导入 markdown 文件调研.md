@@ -1,10 +1,11 @@
 ---
 title: anki 导入 markdown 文件调研
-date: 2022-07-06 05:04:19
+date: 2022-07-06 05:04:18
+permalink: /pages/6ea5bb85-0317-44bd-a1ad-d9201dccec1a/
 tags:
   - 
 categories:
-  - 
+  - 随笔
 article: true
 ---
 
