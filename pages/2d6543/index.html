@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>flask_admin 主页支持markdown写入 | AngusWG&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/AngusWG/img/favicon.ico">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-K6T796E95X"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K6T796E95X');</script>
+    <link rel="alternate" type="application/rss+xml" href="https://anguswg.github.io/AngusWG/rss.xml" title="AngusWG&#39;s blog RSS Feed">
+    <meta name="description" content="ZZA的博客">
+    <meta name="keywords" content="Angus,AngusWG,zza,ZZA">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/AngusWG/assets/css/0.styles.af38f118.css" as="style"><link rel="preload" href="/AngusWG/assets/js/app.28515c43.js" as="script"><link rel="preload" href="/AngusWG/assets/js/2.2f13f085.js" as="script"><link rel="preload" href="/AngusWG/assets/js/33.fe0127c2.js" as="script"><link rel="prefetch" href="/AngusWG/assets/js/10.c743adff.js"><link rel="prefetch" href="/AngusWG/assets/js/100.4c3ea1a6.js"><link rel="prefetch" href="/AngusWG/assets/js/101.648a4a07.js"><link rel="prefetch" href="/AngusWG/assets/js/102.81d2dfde.js"><link rel="prefetch" href="/AngusWG/assets/js/103.f964e042.js"><link rel="prefetch" href="/AngusWG/assets/js/104.eaf1ff70.js"><link rel="prefetch" href="/AngusWG/assets/js/105.bd09c787.js"><link rel="prefetch" href="/AngusWG/assets/js/106.296178a1.js"><link rel="prefetch" href="/AngusWG/assets/js/107.0b2eadd6.js"><link rel="prefetch" href="/AngusWG/assets/js/108.ff9146d5.js"><link rel="prefetch" href="/AngusWG/assets/js/109.2b8c9cf5.js"><link rel="prefetch" href="/AngusWG/assets/js/11.12337001.js"><link rel="prefetch" href="/AngusWG/assets/js/110.45216df4.js"><link rel="prefetch" href="/AngusWG/assets/js/111.7a9cf833.js"><link rel="prefetch" href="/AngusWG/assets/js/112.27f3a3f2.js"><link rel="prefetch" href="/AngusWG/assets/js/12.2ba6a065.js"><link rel="prefetch" href="/AngusWG/assets/js/13.27448b57.js"><link rel="prefetch" href="/AngusWG/assets/js/14.5400f61a.js"><link rel="prefetch" href="/AngusWG/assets/js/15.32cdb06a.js"><link rel="prefetch" href="/AngusWG/assets/js/16.c596413e.js"><link rel="prefetch" href="/AngusWG/assets/js/17.7be47c4d.js"><link rel="prefetch" href="/AngusWG/assets/js/18.9ea3465f.js"><link rel="prefetch" href="/AngusWG/assets/js/19.d6fce099.js"><link rel="prefetch" href="/AngusWG/assets/js/20.eb857f02.js"><link rel="prefetch" href="/AngusWG/assets/js/21.8d119058.js"><link rel="prefetch" href="/AngusWG/assets/js/22.5fd63cb1.js"><link rel="prefetch" href="/AngusWG/assets/js/23.4a2e07ba.js"><link rel="prefetch" href="/AngusWG/assets/js/24.58d23c89.js"><link rel="prefetch" href="/AngusWG/assets/js/25.5df93a13.js"><link rel="prefetch" href="/AngusWG/assets/js/26.889f4c0f.js"><link rel="prefetch" href="/AngusWG/assets/js/27.fc06215c.js"><link rel="prefetch" href="/AngusWG/assets/js/28.0d514c50.js"><link rel="prefetch" href="/AngusWG/assets/js/29.adbab429.js"><link rel="prefetch" href="/AngusWG/assets/js/3.7671ead6.js"><link rel="prefetch" href="/AngusWG/assets/js/30.949badd3.js"><link rel="prefetch" href="/AngusWG/assets/js/31.3d07129b.js"><link rel="prefetch" href="/AngusWG/assets/js/32.4170701e.js"><link rel="prefetch" href="/AngusWG/assets/js/34.da5165b5.js"><link rel="prefetch" href="/AngusWG/assets/js/35.b0408d29.js"><link rel="prefetch" href="/AngusWG/assets/js/36.4895d5c8.js"><link rel="prefetch" href="/AngusWG/assets/js/37.4c3ee7bc.js"><link rel="prefetch" href="/AngusWG/assets/js/38.c33bbb1f.js"><link rel="prefetch" href="/AngusWG/assets/js/39.a19499e0.js"><link rel="prefetch" href="/AngusWG/assets/js/4.48b9a70d.js"><link rel="prefetch" href="/AngusWG/assets/js/40.54bdc4f3.js"><link rel="prefetch" href="/AngusWG/assets/js/41.b6a43845.js"><link rel="prefetch" href="/AngusWG/assets/js/42.2b8839de.js"><link rel="prefetch" href="/AngusWG/assets/js/43.eec6f727.js"><link rel="prefetch" href="/AngusWG/assets/js/44.858d04ad.js"><link rel="prefetch" href="/AngusWG/assets/js/45.c8c566c2.js"><link rel="prefetch" href="/AngusWG/assets/js/46.c7ad35ef.js"><link rel="prefetch" href="/AngusWG/assets/js/47.9cb88d75.js"><link rel="prefetch" href="/AngusWG/assets/js/48.37bd91a5.js"><link rel="prefetch" href="/AngusWG/assets/js/49.c35b3812.js"><link rel="prefetch" href="/AngusWG/assets/js/5.ae75089f.js"><link rel="prefetch" href="/AngusWG/assets/js/50.4d85b680.js"><link rel="prefetch" href="/AngusWG/assets/js/51.00583900.js"><link rel="prefetch" href="/AngusWG/assets/js/52.5235dc1a.js"><link rel="prefetch" href="/AngusWG/assets/js/53.635c5d81.js"><link rel="prefetch" href="/AngusWG/assets/js/54.daa79b56.js"><link rel="prefetch" href="/AngusWG/assets/js/55.8bb29840.js"><link rel="prefetch" href="/AngusWG/assets/js/56.e0cbe936.js"><link rel="prefetch" href="/AngusWG/assets/js/57.2ade47fc.js"><link rel="prefetch" href="/AngusWG/assets/js/58.bffd6e29.js"><link rel="prefetch" href="/AngusWG/assets/js/59.b95dbe8a.js"><link rel="prefetch" href="/AngusWG/assets/js/6.b02b2d39.js"><link rel="prefetch" href="/AngusWG/assets/js/60.057b386f.js"><link rel="prefetch" href="/AngusWG/assets/js/61.d72f4ea8.js"><link rel="prefetch" href="/AngusWG/assets/js/62.438cfb82.js"><link rel="prefetch" href="/AngusWG/assets/js/63.23ccca52.js"><link rel="prefetch" href="/AngusWG/assets/js/64.bc88525a.js"><link rel="prefetch" href="/AngusWG/assets/js/65.ed17d4d8.js"><link rel="prefetch" href="/AngusWG/assets/js/66.e43b26c2.js"><link rel="prefetch" href="/AngusWG/assets/js/67.96b21bbd.js"><link rel="prefetch" href="/AngusWG/assets/js/68.da72517e.js"><link rel="prefetch" href="/AngusWG/assets/js/69.50824903.js"><link rel="prefetch" href="/AngusWG/assets/js/7.8197c28f.js"><link rel="prefetch" href="/AngusWG/assets/js/70.e80547bf.js"><link rel="prefetch" href="/AngusWG/assets/js/71.7b993c52.js"><link rel="prefetch" href="/AngusWG/assets/js/72.1735e3e7.js"><link rel="prefetch" href="/AngusWG/assets/js/73.7c621390.js"><link rel="prefetch" href="/AngusWG/assets/js/74.8663f90a.js"><link rel="prefetch" href="/AngusWG/assets/js/75.f41bbf0e.js"><link rel="prefetch" href="/AngusWG/assets/js/76.32b93395.js"><link rel="prefetch" href="/AngusWG/assets/js/77.d70c1a9d.js"><link rel="prefetch" href="/AngusWG/assets/js/78.7eec1b25.js"><link rel="prefetch" href="/AngusWG/assets/js/79.163d6e2f.js"><link rel="prefetch" href="/AngusWG/assets/js/8.1177b20e.js"><link rel="prefetch" href="/AngusWG/assets/js/80.adee4e62.js"><link rel="prefetch" href="/AngusWG/assets/js/81.30dba6e0.js"><link rel="prefetch" href="/AngusWG/assets/js/82.5234c5b1.js"><link rel="prefetch" href="/AngusWG/assets/js/83.227e4d34.js"><link rel="prefetch" href="/AngusWG/assets/js/84.e23f590c.js"><link rel="prefetch" href="/AngusWG/assets/js/85.42de0949.js"><link rel="prefetch" href="/AngusWG/assets/js/86.eb346ddc.js"><link rel="prefetch" href="/AngusWG/assets/js/87.4b1cdd5e.js"><link rel="prefetch" href="/AngusWG/assets/js/88.0ebf54b0.js"><link rel="prefetch" href="/AngusWG/assets/js/89.7bf3ddc8.js"><link rel="prefetch" href="/AngusWG/assets/js/9.616f75a8.js"><link rel="prefetch" href="/AngusWG/assets/js/90.ec1ee188.js"><link rel="prefetch" href="/AngusWG/assets/js/91.1ab1b5a4.js"><link rel="prefetch" href="/AngusWG/assets/js/92.def4de82.js"><link rel="prefetch" href="/AngusWG/assets/js/93.7b010849.js"><link rel="prefetch" href="/AngusWG/assets/js/94.de4ccc8e.js"><link rel="prefetch" href="/AngusWG/assets/js/95.6b854d97.js"><link rel="prefetch" href="/AngusWG/assets/js/96.670f1b91.js"><link rel="prefetch" href="/AngusWG/assets/js/97.260735ba.js"><link rel="prefetch" href="/AngusWG/assets/js/98.b9199195.js"><link rel="prefetch" href="/AngusWG/assets/js/99.6fd3aede.js">
+    <link rel="stylesheet" href="/AngusWG/assets/css/0.styles.af38f118.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar have-body-img"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/AngusWG/" class="home-link router-link-active"><img src="/AngusWG/img/logo.jpg" alt="AngusWG's blog" class="logo"> <span class="site-name can-hide">AngusWG's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/AngusWG/" class="nav-link">首页</a></div><div class="nav-item"><a href="/AngusWG/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/AngusWG/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/AngusWG/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/AngusWG/friends/" class="nav-link">友链</a></div><div class="nav-item"><a href="/AngusWG/archives/" class="nav-link">归档</a></div> <a href="https://github.com/AngusWG" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="./img/blogger_avatar.jpg"> <div class="blogger-info"><h3>AngusWG</h3> <span>调包侠</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/AngusWG/" class="nav-link">首页</a></div><div class="nav-item"><a href="/AngusWG/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/AngusWG/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/AngusWG/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/AngusWG/friends/" class="nav-link">友链</a></div><div class="nav-item"><a href="/AngusWG/archives/" class="nav-link">归档</a></div> <a href="https://github.com/AngusWG" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/AngusWG/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/AngusWG/categories/?category=articles" title="分类" data-v-06225672>articles</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/AngusWG" target="_blank" title="作者" class="beLink" data-v-06225672>AngusWG</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2021-04-19</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><!----> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">flask_admin 主页支持markdown写入<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h1 id="flask-admin-主页支持markdown写入"><a href="#flask-admin-主页支持markdown写入" class="header-anchor">#</a> flask_admin 主页支持markdown写入</h1> <p>人比较懒 ，看不懂评论告诉我哈<br> <img src="/AngusWG/assets/img/7485616-9f846c44ade53e4e.c82bf85b.gif" alt=""></p> <p><code>vim view_markdown_index.py</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#!/usr/bin/python3    
+# encoding: utf-8     
+# @Time    : 2020/3/26 15:37    
+# @author  : zza    
+# @Email   : 740713651@qq.com    
+# @File    : readme_helper.py    
+import datetime    
+import os    
+from shutil import copyfile    
+    
+import markdown    
+import markdown.extensions.fenced_code    
+from flask import flash, redirect, request, send_from_directory    
+from flask_admin import AdminIndexView, expose    
+from pygments.formatters.html import HtmlFormatter    
+from werkzeug.utils import secure_filename    
+    
+formatter = HtmlFormatter(style=&quot;emacs&quot;, full=True, cssclass=&quot;codehilite&quot;)    
+css_string = formatter.get_style_defs()    
+    
+    
+class MarkdownIndexView(AdminIndexView):    
+    
+    @expose()    
+    def index(self):    
+        &quot;&quot;&quot;获取readme文件作为index页面帮助文档    
+        copy from https://github.com/solitudenote/gitkeeper/blob/d42f5990b05cf28cee12f20780e7794cd3579ead/app.py    
+        &quot;&quot;&quot;    
+        # get file    
+        readme_file = open(&quot;README.md&quot;, &quot;r&quot;, encoding=&quot;utf8&quot;)    
+        md_template_string = markdown.markdown(readme_file.read(), extensions=[&quot;fenced_code&quot;, &quot;codehilite&quot;])    
+        md_css_string = &quot;&lt;style&gt;&quot; + css_string + &quot;&lt;/style&gt;&quot;    
+        md_template = md_css_string + md_template_string    
+        return self.render(self._template, readme_md=md_template, upload_readme_url=&quot;/admin/upload_form&quot;)    
+    
+    @expose('/upload_form', methods=['POST'])    
+    def upload_file(self):    
+        # check if the post request has the file part    
+        if 'file' not in request.files:    
+            flash('No file part')    
+            return redirect('/admin/')    
+        file = request.files['file']    
+        if file.filename == '':    
+            flash('No file selected for uploading')    
+            return redirect('/admin/')    
+        if file and file.filename == &quot;README.md&quot;:    
+            bak_file = &quot;README.md&quot; + &quot;.{}.bak&quot;.format(datetime.datetime.now().isoformat()).replace(&quot;:&quot;, &quot;-&quot;)    
+            copyfile(&quot;README.md&quot;, bak_file)    
+            filename = secure_filename(file.filename)    
+            file.save(filename)    
+            flash('README.md上传成功')    
+            return redirect('/admin/')    
+        else:    
+            flash('文件名必须为README.md')    
+            return redirect('/admin/')    
+    
+    @expose('/export')    
+    def export(self):    
+        return send_from_directory(os.path.abspath(&quot;.&quot;), &quot;README.md&quot;, as_attachment=True)  # as_a    
+    
+    
+admin_index_view = MarkdownIndexView(name=&quot;主页&quot;, template=&quot;index.html&quot;)    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><p><code>vim index.html</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{% extends 'admin/index.html' %}    
+    
+{% block page_body %}    
+    {{ super() }}    
+    
+    &lt;table class=&quot;markdown-table  table-hover searchable&quot;&gt;    
+        &lt;tr&gt;    
+            &lt;td&gt;    
+                &lt;a href=&quot;{{ get_url('.export') }}&quot;    
+                   title=&quot;{{ _gettext('Export') }}&quot;&gt;{{ _gettext('Export') + ' ' + export_type|upper }}&lt;/a&gt;    
+            &lt;/td&gt;    
+    
+            &lt;form id=&quot;form&quot; method=&quot;post&quot; action={{ upload_readme_url }} enctype=&quot;multipart/form-data&quot;&gt;    
+                &lt;td&gt;    
+                    &lt;label class=&quot;input-file&quot;&gt;    
+                        &lt;a title=&quot;{{ _gettext('Import') }}&quot;&gt; {{ _gettext('Import') }} &lt;/a&gt;    
+                        &lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;upload-file&quot; autocomplete=&quot;off&quot; hidden required&gt;    
+                    &lt;/label&gt;    
+                &lt;/td&gt;    
+            &lt;/form&gt;    
+    
+        &lt;/tr&gt;    
+    &lt;/table&gt;    
+    &lt;br&gt;    
+    &lt;hr/&gt;    
+    &lt;script&gt;    
+    
+        let __main = function () {    
+            document.getElementById(&quot;upload-file&quot;).onchange = function () {    
+                document.getElementById(&quot;form&quot;).submit();    
+            };    
+        }    
+    
+        __main()    
+    &lt;/script&gt;    
+    
+    {{ readme_md|safe }}    
+    
+    &lt;style&gt;    
+        .markdown-table {    
+            width: 200px;    
+            float: right;    
+    
+        }    
+    
+        .markdown-table label {    
+            font-weight: normal;    
+        }    
+    
+        [hidden] {    
+            display: none !important;    
+        }    
+    
+    &lt;/style&gt;    
+{% endblock %}    
+    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br></div></div><p>vim app,py</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from view_markdown_index import admin_index_view    
+from flask import Flask    
+    
+app = Flask(__name__)    
+admin_view = Admin(    
+    app,    
+    template_mode='bootstrap3',    
+    index_view=admin_index_view,    
+    base_template=r'layout.html',    
+    category_icon_classes={'Profiles': 'glyphicon glyphicon-wrench'},    
+)    
+    
+if __name__ == '__main__':    
+    app.run()    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><img src="data:image/jpeg;base64,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" alt=""></p></div></div> <!----> <div class="page-edit"><div class="edit-link"><a href="https://github.com/AngusWG/edit/master/docs/articles/flask_admin 主页支持markdown写入.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022-04-18 22:04:00</span></div></div> <div class="page-nav-wapper"><!----> <!----></div></div> <div class="article-list"><div class="article-title"><a href="/AngusWG/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/AngusWG/pages/b3366f/"><div>
+            笔记系统
+            <!----></div></a> <span class="date">07-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/AngusWG/pages/5674d0e6-4230-45bd-8134-f5974709fd24/"><div>
+            网页笔记插件
+            <!----></div></a> <span class="date">07-06</span></dt></dl><dl><dd>03</dd> <dt><a href="/AngusWG/pages/6ea5bb85-0317-44bd-a1ad-d9201dccec1a/"><div>
+            anki 导入 markdown 文件调研
+            <!----></div></a> <span class="date">07-06</span></dt></dl> <dl><dd></dd> <dt><a href="/AngusWG/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:z740713651@outlook.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/AngusWG" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=149086736" title="听音乐" target="_blank" class="iconfont icon-erji"></a><a href="https://anguswg.github.io/AngusWG/rss.xml" title="RSS" target="_blank" class="iconfont icon-rss"></a><a href="https://steamcommunity.com/profiles/76561198216863856/" title="Steam" target="_blank" class="iconfont icon-steam"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>AngusWG | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <div class="body-bg" style="background:url() center center / cover no-repeat;opacity:0.5;"></div> <!----> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/AngusWG/assets/js/app.28515c43.js" defer></script><script src="/AngusWG/assets/js/2.2f13f085.js" defer></script><script src="/AngusWG/assets/js/33.fe0127c2.js" defer></script>
+  </body>
+</html>
