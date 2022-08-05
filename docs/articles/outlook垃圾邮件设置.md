@@ -1,6 +1,6 @@
 ---
 title: outlook 垃圾邮件设置
-date: 2022-04-25 14:49:44
+date: 2022-04-25 14:49:45
 tags: 
   - 屁大点事
 categories: 
@@ -27,3 +27,17 @@ permalink: /pages/90fc3b/
 
 结合之前还出了一个 [office 365 网页版本](https://www.office.com/) 的推行。
 看来巨硬已经完全放弃客户端了。
+
+---
+
+根据 https://www.v2ex.com/t/858946?p=1#r_11758561
+
+https://us.flow.microsoft.com
+登陆这个，然后新建一个流把收到的邮件放到收件箱就行了。看下面的文章有详细说明步骤。
+反正 Outlook 的邮箱过滤功能就是一坨屎。
+
+https://zhuanlan.zhihu.com/p/403170937
+
+虽然最开始会进入垃圾邮箱，过一段时间就会移动到收件箱了。
+
+---
