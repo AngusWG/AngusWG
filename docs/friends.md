@@ -2,7 +2,6 @@
 
 - [xiecang](https://xiecang.github.io/)
 - [Untitled blog](http://blog.zhipengx.com/)
-- [Ginta](https://ginta.top/)
 - [面包大佬](https://nkiiiiid.github.io/)
 
 ---
@@ -17,5 +16,6 @@
 - [小明明s à domicile](https://www.dongwm.com/) `https://www.dongwm.com/atom.xml`
 - [Timothy](https://xiaozhou.net/atom.xml)
 - [HelloGitHub](https://hellogithub.com/rss)
+- [Ginta](https://ginta.top/atom.xml)
 
 ![.](./images/2021-05-13-12-14-07.png)
