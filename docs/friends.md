@@ -2,7 +2,7 @@
 
 - [xiecang](https://xiecang.github.io/)
 - [Untitled blog](http://blog.zhipengx.com/)
-- [Ginta](https://www.ginta.top/)
+- [Ginta](https://ginta.top/)
 - [面包大佬](https://nkiiiiid.github.io/)
 
 ---
