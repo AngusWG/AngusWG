@@ -1,6 +1,6 @@
 ---
 title: 面试八股文-anki-卡片
-date: 2022-08-01 15:14:21
+date: 2022-08-01 15:14:22
 permalink: /pages/65fd5f2f-a016-46d8-b9e7-dc660c0a9d2b/
 tags:
   - 
@@ -27,7 +27,7 @@ article: true
   - 后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试
   - https://frank-lam.github.io/fullstack-tutorial/#/introduction
   - 主要讲概念 面试八股文 中包含题目
-- [小林 x 图解计算机基础](https://github.com/xiaolincoder/CS-Base)1
+- [小林 x 图解计算机基础](https://github.com/xiaolincoder/CS-Base)
   - 图解计算机网络、操作系统、计算机组成、数据库
   - https://xiaolincoding.com/
   - 抽查了一下  面试八股文 中包含题目
@@ -60,6 +60,7 @@ article: true
   - 第二个往后的所有标题 级别+1
   - E:\tmp\baguwen-wiki\docs\DOM-API-面试题（山月）.md
     - 测试 ok
+  - [ ] 所有二级标题加上一级标题
 - 图片效果
   - 存在部分无图片的情况
   - 1cbecf47a83cbb8e02f34bcd5a92f0a5
@@ -73,7 +74,7 @@ article: true
 ``` bash
 python format_markdown.py
 pip install markdown-anki-decks
-mdankideck .\docs .\anki --sync  --prefix "面试八股文：:" --delete
+mdankideck .\docs .\anki --prefix "面试八股文::" --delete --sync  
 ```
 
 ### format markdown 脚本
@@ -91,9 +92,11 @@ import sys
 import shutil
 import re
 
-def main():
 
+def main():
     # remove note files
+    if not os.path.isdir("study_notes"):
+        os.mkdir("study_notes")
     file_names = os.listdir(".\docs")
     for file_name in file_names:
         if "学习笔记" in file_name:
@@ -109,17 +112,27 @@ def main():
         if not file_name.endswith(".md"):
             continue
         context = open(".\docs\\" + file_name, "r", encoding="utf-8").read()
-        level_one_tiltes = re.findall(r"\n(#+ [^\n]+)\n", context)
+        level_one_tiltes = re.findall(r"\n\n# ([^\n]+)\n", context)
         # replace \n(#+ [^\n]+)\n to \n#$1\n
         if len(level_one_tiltes) != 1:
             print("unformat file", file_name)
             # format file
             original_first_title = level_one_tiltes[0]
-            changed_first_title = original_first_title.replace("#", "##")
 
-            new_context = re.sub(r"\n(#+ [^\n]+)\n", r"\n#\1\n", context)
-
-            new_context = new_context.replace(changed_first_title, original_first_title)
+            # new_context = re.sub(r"\n(#+ [^\n]+)\n", r"\n#\1\n", context)
+            # 二级变三级
+            new_context = re.sub(r"\n(#{2,}) ([^\n]+)\n", rf"\n#\1 \2\n", context)
+            # 一级变二级 并加上主标题
+            new_context = re.sub(
+                r"\n# ([^\n]+)\n",
+                rf"\n## " + original_first_title + r" - \1\n",
+                new_context,
+            )
+            # 一级保持不变
+            new_context = new_context.replace(
+                f"## {original_first_title} - {original_first_title}",
+                f"# {original_first_title}",
+            )
             open(".\docs\\" + file_name, "w", encoding="utf-8").write(new_context)
         else:
             print("format file", file_name)
@@ -127,6 +140,8 @@ def main():
 
     pass
 
+
 if __name__ == "__main__":
     main()
+
 ```
