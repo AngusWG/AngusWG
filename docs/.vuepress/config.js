@@ -246,6 +246,12 @@ module.exports = {
       },
     ],
     [
+      "vuepress-plugin-google-adsense",
+      {
+        adClient: "ca-pub-5910339155716380", // replace it with your adClient
+      },
+    ],
+    [
       "@vuepress/google-analytics",
       {
         ga: "UA-200681629-1", // UA-00000000-0
