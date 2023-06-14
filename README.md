@@ -19,7 +19,7 @@
       height="165"
     /> -->
     <img
-      src="https://github-readme-stats-nzp4ivrq9-florianbussmann.vercel.app/api/wakatime?username=AngusWG&theme=dark&show_icons=tru"
+      src="https://github-readme-stats-nzp4ivrq9-florianbussmann.vercel.app/api/wakatime?username=AngusWG&theme=dark&show_icons=tru&range=last_7_days"
       height="165"
     />
   </p>
