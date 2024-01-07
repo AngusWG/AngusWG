@@ -1,4 +1,15 @@
-# 友链
+---
+title: friends
+date: 2023-01-07 15:16:00
+permalink: /pages/1de019e8-2360-4a9d-b223-e08ea6259cf9/
+tags:
+  - 
+categories:
+  - 
+article: false
+---
+
+# friends
 
 - [xiecang](https://xiecang.github.io/)
 - [Untitled blog](http://blog.zhipengx.com/)
