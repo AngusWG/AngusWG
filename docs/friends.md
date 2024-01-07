@@ -1,6 +1,6 @@
 ---
 title: friends
-date: 2023-01-07 15:16:00
+date: 2022-01-07 15:16:30
 permalink: /pages/1de019e8-2360-4a9d-b223-e08ea6259cf9/
 tags:
   - 
