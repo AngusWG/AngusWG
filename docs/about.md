@@ -1,4 +1,15 @@
-# 零零碎碎
+---
+title: about
+date: 2023-01-07 15:15:24
+permalink: /pages/234597c1-f8e3-456f-8089-137d330c5ca3/
+tags:
+  - 
+categories:
+  - 
+article: false
+---
+
+# about
 
 ---
 
