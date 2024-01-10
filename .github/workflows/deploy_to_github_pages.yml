@@ -41,11 +41,11 @@ jobs:
           node-version: ${{ matrix.node-version }} # 版本
 
       - name: run deploy.sh # 步骤3
-        # env: # 设置环境变量
-        #   GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-        #   CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
-        #   GITALK_CLIENTID: ${{ secrets.GITALK_CLIENTID }}
-        #   GITALK_CLIENTSECRET: ${{ secrets.GITALK_CLIENTSECRET }}
+        env: # 设置环境变量
+          # GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+          # CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
+          GITALK_CLIENTID: ${{ secrets.GITALK_CLIENTID }} # git talk
+          GITALK_CLIENTSECRET: ${{ secrets.GITALK_CLIENTSECRET }} # git talk
         run: npm install && npm run build
 
       - name: Setup Pages
