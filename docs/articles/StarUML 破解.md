@@ -53,4 +53,5 @@ https://blog.csdn.net/the_victory/article/details/52781357
 
 1. 重启 starUML 需要在 help->Enter License 选项里面输入你代码里写的 name 和 licensekey。
 2. 重启 starUML，你会发现已经没有提示了，然后点击 help->about starUML, 结果如下
-    ![这里写图片描述](http://upload-images.jianshu.io/upload_images/7485616-f2b845312cd1035c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/7485616-f2b845312cd1035c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

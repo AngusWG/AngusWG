@@ -8,27 +8,31 @@ tags:
   - null
 article: true
 ---
-# flask_admin csv 导出  中文乱码问题  
+# flask_admin csv 导出 中文乱码问题
 
-相关参考 [python中文写入CSV乱码解决](https://blog.csdn.net/Yeoman92/article/details/71123845)    
-* 原因：csv文件开头缺少BOM_UTF8 字符     
-* 解决：在Response开头加上BOM_UTF8字符    
-* 核心代码    
-```    
+相关参考 [python 中文写入 CSV 乱码解决](https://blog.csdn.net/Yeoman92/article/details/71123845)
+
+- 原因：csv 文件开头缺少 BOM_UTF8 字符
+- 解决：在 Response 开头加上 BOM_UTF8 字符
+- 核心代码
+
+``` python
 titles[0] = codecs.BOM_UTF8.decode("utf8")+codecs.BOM_UTF8.decode()+titles[0]    
-```    
-    
-    
-* 相关引入    
-```    
+```
+
+- 相关引入
+
+``` python
 import codecs    
 import csv    
     
 from flask_admin._compat import csv_encode    
 from flask import request, redirect, flash, current_app, Response, stream_with_context    
-```    
-* 逻辑代码（复制 放到对应的 ModelView 类里就好了）    
-```    
+```
+
+- 逻辑代码（复制 放到对应的 ModelView 类里就好了）
+
+``` python
     def _export_csv(self, return_url):    
         """    
             Export a CSV of records as a stream.    
@@ -71,4 +75,4 @@ from flask import request, redirect, flash, current_app, Response, stream_with_c
             headers={'Content-Disposition': disposition},    
             mimetype='text/csv'    
         )    
-```    
+```

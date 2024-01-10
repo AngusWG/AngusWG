@@ -1,5 +1,5 @@
 ---
-title: python调试
+title: python 调试
 permalink: /pages/4c83ff5b-4a4b-4784-b125-4e0d70e4dd27/
 date: 2022-04-19 14:46:09
 tags:
@@ -8,10 +8,10 @@ categories:
   - Python
 article: true
 ---
-# python调试
+# python 调试
 
-- [参考](https://py.eastlakeside.cn/book/ProgrammerTools/debugging.html) (doc just the docs 主题蛮好看的)
-- 基本不用，现场不方便改代码debug。
+- [参考](https://py.eastlakeside.cn/book/ProgrammerTools/debugging.html) (doc just the docs 主题蛮好看的）
+- 基本不用，现场不方便改代码 debug。
 
 ``` bash
 python -m pdb my_script.py

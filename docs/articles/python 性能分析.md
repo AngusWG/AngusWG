@@ -77,6 +77,4 @@ Pycharm 右上角启动按钮旁边有性能分析按钮，
 
 ![image.png](../images/7485616-50571e9d9a8de77b.png)  
 
----
-
 ![](../images/7485616-633f052b4326b4d8.jpg)

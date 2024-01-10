@@ -1,5 +1,5 @@
 ---
-title: flask_admin设置宽度为全屏
+title: flask_admin 设置宽度为全屏
 date: 2021-04-19 11:04:53
 permalink: /pages/0c284a/
 categories: 
@@ -8,7 +8,7 @@ tags:
   - null
 article: true
 ---
-# flask_admin设置宽度为全屏  
+# flask_admin 设置宽度为全屏
 
 ``` html
 {% extends 'admin/base.html' %}    

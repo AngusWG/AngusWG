@@ -35,7 +35,6 @@ article: true
   - 下载插件 AnkiConnect
     - 插件编号 2055492159
   - https://ankiweb.net/shared/info/2055492159
-
 - 在打开 anki 软件的情况下，输入以下命令，导入 markdown 文件作为抽认卡
   - `mdankideck .\note\docs\anki E:\anki --sync  --prefix "md::" --delete`
   - **E:\anki** 文件夹作为 anki 文件数据的存放地，删除不影响 anki 使用。

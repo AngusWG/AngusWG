@@ -15,8 +15,9 @@ RQPro2.0 与 VS code 的集成
 ## 安装 Python Extensions
 
 ![image.png](../images/7485616-f158acfbcd3c94d6.png)
-点击 `install`安装
-安装后重启 VS code
+
+- 点击 `install`安装
+- 安装后重启 VS code
 
 ## 获取 rqpro python 环境路径
 
@@ -29,6 +30,7 @@ RQPro2.0 与 VS code 的集成
 1. 新建一个文件夹
 2. 将文件夹拖入到 VS code 窗口
 3. 创建一个。py 文件
+
 ![image.png](../images/7485616-72678655d4375ff6.png)
 
 ![image.png](../images/7485616-d86003d95947b08b.png)
@@ -37,7 +39,7 @@ RQPro2.0 与 VS code 的集成
 
 ![image.png](../images/7485616-9247cbc10fd98329.png)
 
-#### 如果不能选择此 python
+### 如果不能选择此 python
 
 需要做如下修改
 
@@ -49,7 +51,7 @@ RQPro2.0 与 VS code 的集成
 
 输入下列代码
 
-```
+``` python
 #!/usr/bin/python3    
 # encoding: utf-8    
 import pandas as pd    
@@ -77,7 +79,8 @@ print(result.all())
 ## 运行 RQAalpha 回测
 
 在 `.vscode`文件夹下 `launch.json`中输入如下代码：
-```
+
+``` json
 {    
     // Use IntelliSense to learn about possible attributes.    
     // Hover to view descriptions of existing attributes.    
@@ -101,5 +104,6 @@ print(result.all())
 }    
 ```
 
-选择策略文件 使用 debug 模式运行
+- 选择策略文件 使用 debug 模式运行
+
 ![image.png](../images/7485616-6e7808203c5fb95c.png)

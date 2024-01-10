@@ -51,10 +51,12 @@ guiApplications=false
 
 在国内不要开代理，速度就上去了。
 
-## win11右键默认显示更多选项
+## win11 右键默认显示更多选项
 
 - [来源](https://www.zhihu.com/question/480356710/answer/2204452858)
 - [Windows 11 Classic Context Menu v1.1](https://www.sordum.org/14479/windows-11-classic-context-menu-v1-1/)
 
-下载Windows 11 Classic Context Menu后，打开则可以看到三个选项，分别对应“经典右键菜单”、“默认右键菜单”和“重启explorer.exe”。
-可以自由切换经典的菜单样式。
+---
+
+- 下载 Windows 11 Classic Context Menu 后，打开则可以看到三个选项，分别对应“经典右键菜单”、“默认右键菜单”和“重启 explorer.exe”。
+- 可以自由切换经典的菜单样式。

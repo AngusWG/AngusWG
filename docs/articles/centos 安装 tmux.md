@@ -50,7 +50,7 @@ tmux -V
 
 推荐一个使用说明（最下面有个配置推荐 放好~/.tmux.conf 然后重开就好了）
 
-* [Tmux 快捷键 & 速查表 & 简明教程](https://gist.github.com/AngusWG/44043bee8a0e4c39331443ef71efc9b7)
+- [Tmux 快捷键 & 速查表 & 简明教程](https://gist.github.com/AngusWG/44043bee8a0e4c39331443ef71efc9b7)
 
 ## 找不到 libevent 的问题
 

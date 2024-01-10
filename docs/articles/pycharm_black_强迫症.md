@@ -50,7 +50,7 @@ BlackConnect 要起服务端，而且快捷键不同 (Alt + Shift + B)
 
 #### step1 安装
 
-windows下 先 python 安装 black isort
+windows 下 先 python 安装 black isort
 
 `pip install black isort -U`
 `pip install black==22.1 isort==5.10 -U`  # 安装指定版本
@@ -66,7 +66,7 @@ windows下 先 python 安装 black isort
   - `which black`
   - `which isort`
 
-#### step3 pycharm配置扩展工具
+#### step3 pycharm 配置扩展工具
 
 File -> Settings -> Tools -> External Tools
 
@@ -86,18 +86,17 @@ Program: <install_location_from_step_2>
 Arguments: -e -m 4 -w 120 $FilePath$
 ```
 
-#### step4 pycharm配置快捷键
+#### step4 pycharm 配置快捷键
 
  Settings -> Keymap -> External Tools -> External Tools
 
 - Black. 选择后输入 `Ctrl+Alt+L` 顶掉原来的快捷键
-- Isort. 同理，输入  `Ctrl+Alt+O` 顶掉原有的import格式化
+- Isort. 同理，输入  `Ctrl+Alt+O` 顶掉原有的 import 格式化
 
-配置完后 就可以使用 black 和 isort 格式化代码了.
-
+配置完后 就可以使用 black 和 isort 格式化代码了。
 ---
 
-pycharm 原有设置 (方便小伙伴还原)
+pycharm 原有设置 （方便小伙伴还原）
 
 | 拓展工具 | 原有快捷键名称   | 快捷键       |
 | -------- | ---------------- | ------------ |
@@ -156,3 +155,23 @@ isort fastapi tests docs_src scripts --check-only
 ---
 
 ![](../images/2021-06-07-16-40-22.png)
+
+## vscode 插件问题
+
+报错：The Black Formatter server crashed 5 times in the last 3 minutes. The server will not be restarted. See the output for more
+
+修改配置 其他不用改：
+
+```json
+{
+  "black-formatter.path": [
+    "C:\\Users\\z7407\\AppData\\Roaming\\Python\\Python310\\Scripts\\black.exe"
+  ]
+}
+```
+
+### Ctrl+Alt+L 不起作用
+
+快捷键配置  看是否能搜索到
+
+命令窗 搜索 `Format Document with...` 设置 black 为 Default

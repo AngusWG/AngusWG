@@ -1,5 +1,5 @@
 ---
-title: 一个js破解问题记录
+title: 一个 js 破解问题记录
 date: 2021-04-19 11:04:53
 permalink: /pages/8497eb/
 categories: 
@@ -8,9 +8,9 @@ tags:
   - null
 article: true
 ---
-# 一个js破解问题记录  
+# 一个 js 破解问题记录  
 
-中间跳到一个cgi页面
+中间跳到一个 cgi 页面
 
 ![](../images/7485616-ca4b9116cbee7ca7.png)
 

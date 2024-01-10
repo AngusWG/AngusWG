@@ -1,5 +1,5 @@
 ---
-title: sentry服务搭建
+title: sentry 服务搭建
 date: 2021-05-17 16:51:28
 permalink: /pages/43ce60/
 categories: 
@@ -9,10 +9,10 @@ tags:
 article: true
 ---
 
-# sentry服务搭建
+# sentry 服务搭建
 
-* 请提前准备好一个用于发邮件提醒的email
-* 参考 https://juejin.cn/post/6847902219015356423
+- 请提前准备好一个用于发邮件提醒的 email
+- 参考 https://juejin.cn/post/6847902219015356423
 
 下载官方的部署项目
 

@@ -1,5 +1,5 @@
 ---
-title: Jenkins pipeline 构建后发给提交者(触发者)邮件
+title: Jenkins pipeline 构建后发给提交者（触发者）邮件
 date: 2021-04-19 11:04:53
 permalink: /pages/42ef80/
 categories: 
@@ -8,16 +8,16 @@ tags:
   - null
 article: true
 ---
-# Jenkins pipeline 构建后发给提交者(触发者)邮件  
+# Jenkins pipeline 构建后发给提交者（触发者）邮件
 
-每次Jenkins走pipeline自动构建时，我需要等待构建完成，上到测试环境后再通知测试或者项目去跟近，
-最开始想用机器人，后面发现发邮件很简单，我也有邮件弹窗提示，所以让jenkins做完后发个做完的邮件给我。
+每次 Jenkins 走 pipeline 自动构建时，我需要等待构建完成，上到测试环境后再通知测试或者项目去跟近，
+最开始想用机器人，后面发现发邮件很简单，我也有邮件弹窗提示，所以让 jenkins 做完后发个做完的邮件给我。
 
 ![](../images/7485616-82b560786e888659.jpg)
 
-Jenkinsfile中增加两段代码:
+Jenkinsfile 中增加两段代码：
 
-## 1. 在stage该在的地方添加下列代码
+## 1. 在 stage 该在的地方添加下列代码
 
 ``` bash
         stage("get GIT_COMMIT_NAME/GIT_COMMIT_EMAIL") {    
@@ -44,9 +44,9 @@ Jenkinsfile中增加两段代码:
                 mail to: "${env.git_commit_email}",    
                 subject: "[Jenkins] SUCCESSFUL: ${env.appName} [${env.BUILD_NUMBER}]",    
                 body: """SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'    
-分支: ${env.BRANCH_NAME}    
+分支：${env.BRANCH_NAME}    
 JOB_NAME: ${env.JOB_NAME}    
-提交人: ${env.git_commit_name}    
+提交人：${env.git_commit_name}    
 构建次数：${env.BUILD_NUMBER}    
 console output：${env.BUILD_URL}    
                 """    
@@ -57,9 +57,9 @@ console output：${env.BUILD_URL}
                 mail to: "${env.git_commit_email}",    
                 subject: "[Jenkins] FAILURE: ${env.appName} [${env.BUILD_NUMBER}]",    
                 body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'    
-分支: ${env.BRANCH_NAME}    
+分支：${env.BRANCH_NAME}    
 JOB_NAME: ${env.JOB_NAME}    
-提交人: ${env.git_commit_name}    
+提交人：${env.git_commit_name}    
 构建次数：${env.BUILD_NUMBER}    
 console output：${env.BUILD_URL}    
                 """    

@@ -1,5 +1,5 @@
 ---
-title: exe'
+title: LINK fatal error LNK1158 cannot run rc.exe
 date: 2021-04-19 11:04:53
 permalink: /pages/028a1b/
 categories: 
@@ -8,14 +8,15 @@ tags:
   - null
 article: true
 ---
-# LINK fatal error LNK1158 cannot run 'rc.exe'  
+# LINK fatal error LNK1158 cannot run rc.exe
 
-[参考 LINK : fatal error LNK1158: cannot run 'rc.exe'](https://blog.csdn.net/yapingxin/article/details/80541537)    
-    
-python 编译cython文件的时候    
-# 报错如下    
-    
-```    
+[参考 LINK : fatal error LNK1158: cannot run 'rc.exe'](https://blog.csdn.net/yapingxin/article/details/80541537)
+
+python 编译 cython 文件的时候
+
+## 报错如下
+
+``` bash
     ERROR: Command errored out with exit status 1:    
      command: 'd:\programdata\miniconda3\envs\py35\python.exe' -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'D:\\PycharmProjects\\rqalpha-mod-optimizer2\\setup.py'"'"'; __file__='"'"'D:\\PycharmProjects\\rqalpha-mo    
 d-optimizer2\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps    
@@ -77,18 +78,18 @@ ERROR: Command errored out with exit status 1: 'd:\programdata\miniconda3\envs\p
 "'D:\\PycharmProjects\\rqalpha-mod-optimizer2\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' dev    
 elop --no-deps Check the logs for full command output.    
     
-```    
-    
-# 解决    
-    
-> C:\Program Files (x86)\Windows Kits\8.1\bin\x86    
-    
-这个目录下的 rc.exe 和 rcdll.dll 拷贝到我的 Visual C++ 的 VC/Bin 目录下：    
-    
-> D:\Apps\x86\Microsoft\Visual_Studio\v14.0\VC\bin    
-    
-`通过错误信息，我电脑的文件位置是 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\`    
-注意我的 Visual C++ 的安装目录可能和你的不同，你需要用你自己的的 VC/Bin 目录。    
-    
-    
-![哑巴日记](../images/7485616-c6a05b68cbc6798b.jpg)    
+```
+
+# 解决
+
+> C:\Program Files (x86)\Windows Kits\8.1\bin\x86
+
+这个目录下的 rc.exe 和 rcdll.dll 拷贝到我的 Visual C++ 的 VC/Bin 目录下：
+
+> D:\Apps\x86\Microsoft\Visual_Studio\v14.0\VC\bin
+
+`通过错误信息，我电脑的文件位置是 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\`
+
+注意我的 Visual C++ 的安装目录可能和你的不同，你需要用你自己的的 VC/Bin 目录。
+
+![哑巴日记](../images/7485616-c6a05b68cbc6798b.jpg)

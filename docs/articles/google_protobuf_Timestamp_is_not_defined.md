@@ -8,7 +8,7 @@ tags:
   - null
 article: true
 ---
-# google.protobuf.Timestamp is not defined  
+# google.protobuf.Timestamp is not defined
 
 > 错误 "google.protobuf.Timestamp" is not defined.
 
@@ -18,7 +18,7 @@ article: true
 
 简单粗暴的将`protoc\include\google`google文件夹拷贝过来就好了
 
-- protoc下载地址<https://github.com/protocolbuffers/protobuf/releases/>
+- protoc下载地址https://github.com/protocolbuffers/protobuf/releases/
 
 ![image.png](../images/7485616-4e624c88f971136e.png)
 

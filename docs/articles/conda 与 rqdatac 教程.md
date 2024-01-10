@@ -8,23 +8,23 @@ tags:
   - null
 article: true
 ---
-# conda 与 rqdatac 教程  
+# conda 与 rqdatac 教程
 
-# 什么是 conda
+## 什么是 conda
 
 conda 是一个包、依赖、环境管理工具。方便 python 间环境隔离。
 conda 可以创建许多单独的 python 环境，这些 python 环境相互隔离，当其中一个 python 环境因为改动或其他原因错误时，不会影响其他 python 环境。
 
-# 为什么装 miniconda
+## 为什么装 miniconda
 
 参考 [miniconda 清华源](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
 
-# 下载 miniconda
+## 下载 miniconda
 
 去 [清华源](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/) 下载一个 miniconda 并安装
 
-* [windows 4.8.2 版 miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_4.8.2-Windows-x86_64.exe)
-* [mac 版 4.8.2miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_4.8.2-MacOSX-x86_64.pkg)
+- [windows 4.8.2 版 miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_4.8.2-Windows-x86_64.exe)
+- [mac 版 4.8.2miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_4.8.2-MacOSX-x86_64.pkg)
 
 下载后 如下几个需要手动改一下
 ![](../images/7485616-f8fbac177932f147.png)
@@ -33,7 +33,7 @@ conda 可以创建许多单独的 python 环境，这些 python 环境相互隔�
 
 ![](../images/7485616-1f8399a7088f7978.png)
 
-* 对于部分没有点添加到环境变量的小伙伴 请按如下操作添加`环境变量`
+- 对于部分没有点添加到环境变量的小伙伴 请按如下操作添加`环境变量`
 ![](../images/7485616-12a06fbb260d7908.png)
 
 ![](../images/7485616-81b9defdbf4f1287.png)
@@ -50,7 +50,7 @@ conda 可以创建许多单独的 python 环境，这些 python 环境相互隔�
 
 ---
 
-# 运行 miniconda
+## 运行 miniconda
 
 右键开始菜单，打开`Windows PowerShell`  (**可选**: 输入 conda activate base 启动 base 环境）
 
@@ -62,11 +62,11 @@ conda 可以创建许多单独的 python 环境，这些 python 环境相互隔�
 
 ---
 
-# pip 配置默认镜像源
+## pip 配置默认镜像源
 
 pip 默认下载源在国外，改为国内后，安装各种依赖会快很多。
 
-* 在 cmd 命令行下 运行如下命令
+- 在 cmd 命令行下 运行如下命令
 
 ```bash
 pip config set global.index-url http://pypi.douban.com/simple    
@@ -80,24 +80,24 @@ pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn
 
 ---
 
-# 下载使用 rqdatac
+## 下载使用 rqdatac
 
-* 创建 python 3.8 虚拟环境
+- 创建 python 3.8 虚拟环境
 `conda create -n py38 python=3.8.2`
 
-* 激活环境
+- 激活环境
 `conda activate py38`
 
-* 安装 rqdatac
+- 安装 rqdatac
 `pip install rqdatac`
 *如果安装了 zsh  请执行命令`rehash`*
 
-* 安装 ipython *(ipython 补全功能非常亲民）*
+- 安装 ipython *(ipython 补全功能非常亲民）*
 `pip install ipython`
 
-# 使用 rqdatac
+## 使用 rqdatac
 
-* 输入`ipython` 然后按如下操作
+- 输入`ipython` 然后按如下操作
 
 ```python3
 import rqdatac    
@@ -126,12 +126,12 @@ rqdatac.get_price("000001.XSHE")
 #2020-01-15     60129.0       15.08   85943912.0  ...  16.86  16.79  16.4    
 ```
 
-# conda 基本操作
+## conda 基本操作
 
-* 查看版本信息 `conda --version`
-* 更新 conda `conda update conda`
-* 创建一个虚拟环境 `conda create -n py38 python=3.8.2`
-* 激活新的虚拟环境 `conda activate py38`
-* 列出环境信息 `conda env list`
-* 退出当前环境 `conda deactivate`
-* 删除虚拟环境`conda remove --name py38 --all`
+- 查看版本信息 `conda --version`
+- 更新 conda `conda update conda`
+- 创建一个虚拟环境 `conda create -n py38 python=3.8.2`
+- 激活新的虚拟环境 `conda activate py38`
+- 列出环境信息 `conda env list`
+- 退出当前环境 `conda deactivate`
+- 删除虚拟环境`conda remove --name py38 --all`
