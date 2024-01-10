@@ -35,7 +35,7 @@ jobs:
         #   CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
         #   GITALK_CLIENTID: ${{ secrets.GITALK_CLIENTID }}
         #   GITALK_CLIENTSECRET: ${{ secrets.GITALK_CLIENTSECRET }}
-        run: npm install && npm build
+        run: npm install && npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
