@@ -17,14 +17,14 @@ module.exports = {
     // google Analyse
     // https://github.com/vuejs/vuepress/issues/2713#issuecomment-806621348
     [
-      'script',
+      "script",
       {
         async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-K6T796E95X',
+        src: "https://www.googletagmanager.com/gtag/js?id=G-K6T796E95X",
       },
     ],
     [
-      'script',
+      "script",
       {},
       [
         "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-K6T796E95X');",
@@ -95,7 +95,7 @@ module.exports = {
         {
           iconClass: "icon-github",
           title: "GitHub",
-          link: "https://github.com/AngusWG",
+          link: "https://github.com/AngusWG/AngusWG",
         },
         {
           iconClass: "icon-erji",
@@ -214,12 +214,10 @@ module.exports = {
           admin: ["AngusWG"], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: "last", // 'first'正序 | 'last'倒序
-          id:
-            "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
           title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
           labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body:
-            "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>", // GitHub issue 的内容
+          body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>", // GitHub issue 的内容
         },
       },
     ],
