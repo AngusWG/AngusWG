@@ -1,5 +1,6 @@
 ---
 home: true
+date: 2022-01-07 15:16:30
 # heroImage: /img/web.png
 heroText: AngusWG's blog
 tagline: 欢迎来到AngusWG(zza)的小站。
