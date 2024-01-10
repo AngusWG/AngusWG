@@ -14,18 +14,18 @@ article: true
 # https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n
 # 请在rqlicense-server 目录下操作    
 # 生成翻译文件模版    
-# pybabel extract -F babel.cfg -k _l -o messages.pot .    
+pybabel extract -F babel.cfg -k _l -o messages.pot .    
 # 生成翻译文件 一般只需要 init 一次    
-# pybabel init -i messages.pot -d rqlicense/translations -l en    
+pybabel init -i messages.pot -d rqlicense/translations -l en    
 # 更新翻译文件    
-# pybabel update -i messages.pot -d rqlicense/translations -l en    
+pybabel update -i messages.pot -d rqlicense/translations -l en    
 # 编译    
-# pybabel compile -d rqlicense/translations    
+pybabel compile -d rqlicense/translations    
 ```
 
-附赠 messages.po 谷歌翻译脚本
+- 附赠 messages.po 谷歌翻译脚本
 
-``` python3
+``` python
 #!/usr/bin/python3    
 # encoding: utf-8     
 # @Time    : 2019/12/13 15:25    

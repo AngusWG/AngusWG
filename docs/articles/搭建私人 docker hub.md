@@ -76,6 +76,7 @@ docker push your_domain/test-image
 ``` bash
 # 无鉴权可以不登录
 docker login localhost:5000/
+
 docker pull localhost:5000/test-image
 
 docker login https://your_domain

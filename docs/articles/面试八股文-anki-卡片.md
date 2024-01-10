@@ -74,7 +74,7 @@ article: true
 ``` bash
 python format_markdown.py
 pip install markdown-anki-decks
-mdankideck .\docs .\anki --prefix "面试八股文::" --delete --sync  
+mdankideck .\docs .\anki --prefix "面试八股文：:" --sync -delete 
 ```
 
 ### format markdown 脚本
@@ -91,7 +91,6 @@ import os
 import sys
 import shutil
 import re
-
 
 def main():
     # remove note files
@@ -139,7 +138,6 @@ def main():
             # mv to format_files
 
     pass
-
 
 if __name__ == "__main__":
     main()

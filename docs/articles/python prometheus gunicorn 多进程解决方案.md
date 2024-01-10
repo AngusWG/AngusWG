@@ -10,19 +10,21 @@ article: true
 ---
 # python prometheus gunicorn 多进程解决方案  
 
-prometheus 监控 ，用gunicorn启动时。多进程内存不互通导致数据有问题。    
-    
-# 参考    
-* [prometheus_client](https://github.com/prometheus/client_python) 官方包，提供prometheus各种接口，其实文档里也写了怎麽处理gunicorn启动问题，我就做个记录。    
-* [prometheus-multiprocessing-example](https://github.com/jonashaag/prometheus-multiprocessing-example)，gayhub上找的非常好的实例。    
-    
-# gunicorn启动方案    
-    
-* 安装prometheus_client `pip install prometheus_client`    
-    
-* 复制这个文件到你的项目中    
-`vim monitoring.py`    
-```python    
+prometheus 监控 ，用gunicorn启动时。多进程内存不互通导致数据有问题。
+
+## 参考
+
+- [prometheus_client](https://github.com/prometheus/client_python) 官方包，提供prometheus各种接口，其实文档里也写了怎麽处理gunicorn启动问题，我就做个记录。
+- [prometheus-multiprocessing-example](https://github.com/jonashaag/prometheus-multiprocessing-example)，gayhub上找的非常好的实例。
+
+## gunicorn启动方案
+
+- 安装prometheus_client `pip install prometheus_client`
+
+- 复制这个文件到你的项目中
+`vim monitoring.py`
+
+```python
 #!/usr/bin/python3    
 # encoding: utf-8    
 # @Time    : 2019/8/2 16:29    
@@ -107,40 +109,43 @@ def setup_monitoring(app, app_name=None):
         data = generate_latest(registry)    
         return Response(data, mimetype=CONTENT_TYPE_LATEST)    
     
-```    
-    
-* 在你代码中 导入文件并初始化    
-```    
+```
+
+- 在你代码中 导入文件并初始化
+
+``` python3
 # from flask import Flask    
 # app = Flask(__name__)    
 from persistd.monitoring import setup_monitoring    
 setup_monitoring(app, "app_name")    
-```    
-    
-* 设置Gunicom配置文件    
-`vim gunicorn.conf.py`    
-``` python3    
+```
+
+- 设置Gunicom配置文件
+`vim gunicorn.conf.py`
+
+``` python3
 from prometheus_client import multiprocess    
 def child_exit(server, worker):    
     multiprocess.mark_process_dead(worker.pid)    
-```    
-    
-* 启动Gunicom时 增加参数指向配置文件    
-` -c gunicorn.conf.py`    
-    
-    
-* 设置环境变量：需要一个临时文件夹,且环境变量`prometheus_multiproc_dir`指向该文件夹(`注意启动用户读写权限`),     
-该文件夹用于存放prometheus数据。    
-```    
+```
+
+- 启动Gunicom时 增加参数指向配置文件
+`-c gunicorn.conf.py`
+
+- 设置环境变量：需要一个临时文件夹,且环境变量`prometheus_multiproc_dir`指向该文件夹(`注意启动用户读写权限`),
+该文件夹用于存放prometheus数据。
+
+``` bash
 rm -rf multiproc-tmp    
 mkdir multiproc-tmp    
 export prometheus_multiproc_dir=multiproc-tmp    
 gunicorn -c gunicorn_conf.py -w 4 yourapp:app    
-```    
-    
----    
-附一个 asyncio 的 monitoring.py    
-```    
+```
+
+---
+附一个 asyncio 的 monitoring.py
+
+``` python
 #!/usr/bin/python3    
 # encoding: utf-8    
 # @Time    : 2019/9/5 16:36    
@@ -207,4 +212,4 @@ def setup_monitoring(app, app_name):
     
     app.middlewares.insert(0, prom_middleware(app_name))    
     app.router.add_get("/metrics", metrics)    
-```    
+```

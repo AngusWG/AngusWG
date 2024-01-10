@@ -10,8 +10,9 @@ article: true
 ---
 # socketio 第三次握手失败问题  
 
-https://segmentfault.com/a/1190000012634779    
-    
+https://segmentfault.com/a/1190000012634779
+
+```bash
         location /socket.io {    
             proxy_pass http://rqpro_socketio;    
             proxy_http_version 1.1;    
@@ -24,3 +25,4 @@ https://segmentfault.com/a/1190000012634779
             proxy_set_header Origin "";    
             proxy_read_timeout 86400;    
         }    
+```

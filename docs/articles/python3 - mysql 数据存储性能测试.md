@@ -8,26 +8,36 @@ tags:
   - null
 article: true
 ---
-# python3 - mysql 数据存储性能测试  
-v
-###要求    
-一亿数据 10*8    
-测试用5w数据     
-预测时间为 结果时间* 2000    
-***    
-###设计思路    
-* 程序执行20遍求平均值    
-* 结束时间 - 开始时间    
-* 不同python引擎    
-* 不同数据量 然后commit提交 响应速度    
-***    
-###数据库连接工具    
-- [x] MySQL-Python    
-- [x] pymysql    
-- [X ] MySQL-Connector    
-***    
-###代码    
-```python    
+# python3 - mysql 数据存储性能测试
+
+## 要求
+
+- 一亿数据 10*8
+- 测试用 5w 数据
+- 预测时间为 结果时间* 2000
+
+---
+
+## 设计思路
+
+- 程序执行 20 遍求平均值
+- 结束时间 - 开始时间
+- 不同 python 引擎
+- 不同数据量 然后 commit 提交 响应速度
+
+---
+
+## 数据库连接工具
+
+- [x] MySQL-Python
+- [x] pymysql
+- [X ] MySQL-Connector
+
+---
+
+## 代码
+
+```python
     #!/usr/bin/python3    
 # encoding: utf-8     
 # @Time    : 2018/7/14 0014 16:12    
@@ -40,14 +50,12 @@ from flask_sqlalchemy import SQLAlchemy
     
 db = SQLAlchemy()    
     
-    
 class Student(db.Model):    
     __tablename__ = "stu"    
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=True)    
     name_ = db.Column(db.String(127))    
     age = db.Column(db.Integer)    
     class_num = db.Column(db.Integer)    
-    
     
 def init(param):    
     class sqlalchemy(SQLAlchemy):    
@@ -67,11 +75,9 @@ def init(param):
     global db    
     db = sqlalchemy(app)    
     
-    
 def finish():    
     db.session.query(Student).delete()    
     db.session.commit()    
-    
     
 def time_me(fn):    
     def _wrapper(*args, **kwargs):    
@@ -91,7 +97,6 @@ def time_me(fn):
     
     return _wrapper    
     
-    
 @time_me    
 def insert_many():    
     # 插入诗句    
@@ -102,7 +107,6 @@ def insert_many():
         for c in range(inner):    
             db.session.add(Student(name_='test mysql insert', age=30, class_num=30))    
         db.session.commit()    
-    
     
 ######    
 @time_me    
@@ -119,40 +123,37 @@ def insert_many_by_sql():
                         30, 30))    
         db.session.commit()    
     
-    
 def main2():    
-    """测试sql语句与orm框架 谁快  包括数据组装"""    
+    """测试 sql 语句与 orm 框架 谁快  包括数据组装"""    
     init("mysql+pymysql://root:root@192.168.14.147:3306/efficiency_test")    
-    print("orm框架插入数据")    
-    # iinsert_many函数每500条数数据写入耗时19.671629905700684秒    
+    print("orm 框架插入数据")    
+    # iinsert_many 函数每 500 条数数据写入耗时 19.671629905700684 秒    
     insert_many()    
-    print("sql语句插入数据")    
-    # insert_many_by_sql函数每500条数数据写入耗时17.977628707885742秒    
+    print("sql 语句插入数据")    
+    # insert_many_by_sql 函数每 500 条数数据写入耗时 17.977628707885742 秒    
     insert_many_by_sql()    
     pass    
     
-    
 def main():    
     print('测试开始')    
-    # insert_many函数写入耗时168.07286262512207秒    
+    # insert_many 函数写入耗时 168.07286262512207 秒    
     init("mysql+mysqlconnector://root:root@192.168.14.147:3306/efficiency_test")    
     insert_many()    
     
-    # insert_many函数写入耗时64.85304117202759秒    
-    init("mysql://root:root@192.168.14.147:3306/efficiency_test")  # 默认使用MySQLdb    
+    # insert_many 函数写入耗时 64.85304117202759 秒    
+    init("mysql://root:root@192.168.14.147:3306/efficiency_test")  # 默认使用 MySQLdb    
     insert_many()    
     
-    # insert_many函数写入耗时64.692676067352295秒    
+    # insert_many 函数写入耗时 64.692676067352295 秒    
     init("mysql+pymysql://root:root@192.168.14.147:3306/efficiency_test")    
     insert_many()    
     
-    # insert_many函数写入耗时66.991496086120605秒    
+    # insert_many 函数写入耗时 66.991496086120605 秒    
     init("mysql+mysqldb://root:root@192.168.14.147:3306/efficiency_test")    
     insert_many()    
-    
     
 if __name__ == '__main__':    
     main()    
     main2()    
     
-```    
+```
