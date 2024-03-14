@@ -25,7 +25,7 @@
   </p>
 </div>
 
-- 🏠 [Blog / 博客](https://anguswg.github.io/AngusWG/)
+- 🏠 [Blog / 博客](https://anguswg.github.io/)
 - 🔭 I'm working in Shenzhen, China.
 - 📫 How to reach me: z740713651@outlook.com
 - 📣 Life is limited and learning is unlimited. To learn and do interesting things, and use Python.
